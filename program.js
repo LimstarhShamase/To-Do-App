@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const list = document.querySelector('.todo-list');
 
     form.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent form from refreshing the page
+        event.preventDefault();
 
         if (input.value.trim() !== "") {
             const task = document.createElement("li");
