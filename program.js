@@ -8,21 +8,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (input.value.trim() !== "") {
             const task = document.createElement("li");
-            task.classList.add("todo-list");
+            task.classList.add("todo-item");
 
+            const taskText = document.createElement("span");
+            taskText.innerText = input.value;
 
             const completedBtn = document.createElement("button");
             const deleteBtn = document.createElement("button");
             completedBtn.classList.add("completed-btn");
             deleteBtn.classList.add("delete-btn");
 
-
             deleteBtn.innerText = "Delete";
             completedBtn.innerText = "Complete";
-            task.innerText = input.value;
-            list.appendChild(task);
+
+            task.appendChild(taskText);
             task.appendChild(completedBtn);
             task.appendChild(deleteBtn);
+            list.appendChild(task);
             input.value = "";
 
 

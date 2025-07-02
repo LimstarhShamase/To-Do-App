@@ -95,3 +95,17 @@ h1 {
 .delete-btn:hover {
     background-color: #c62828;
 }
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+}
+
+.todo-item span {
+    flex: 1;
+    margin-right: 10px;
+}
