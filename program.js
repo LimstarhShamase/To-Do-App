@@ -24,6 +24,24 @@ document.addEventListener('DOMContentLoaded', () => {
             task.appendChild(completedBtn);
             task.appendChild(deleteBtn);
             input.value = "";
+
+
+
+            completedBtn.addEventListener("click", function(){
+                task.classList.toggle("completed");
+                if (task.classList.contains("completed")) {
+                    completedBtn.innerText = "Undo";
+                    task.style.textDecoration = "line-through";
+                } else {
+                    completedBtn.innerText = "Complete";
+                    task.style.textDecoration = "none";
+                }
+            });
+
+
+            deleteBtn.addEventListener("click", function() {
+                list.removeChild(task);
+            });
         }
     });
 });
