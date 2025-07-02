@@ -55,13 +55,11 @@ h1 {
     outline-offset: 2px;
 }
 
-
 .todo-list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 0;
-    border-bottom: 1px solid #eee;
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    width: 100%;
 }
 
 .todo-list span {
@@ -100,10 +98,15 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0;
     border-bottom: 1px solid #eee;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 8px;
+    border-radius: 4px;
     width: 100%;
+    box-sizing: border-box;
 }
+
 
 .todo-item span {
     flex: 1;
